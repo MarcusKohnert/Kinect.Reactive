@@ -3,13 +3,15 @@ Kinect.Reactive
 
 This project contains extension methods to ease the use of the Kinect SDK with the help of Rx.
 
-KinectSensor kinect = ...
-var mapper = new CoordinateMapper(kinect);
-kinect.GetSkeletonFrameReadyObservable()
-  		.Select(JointType.HandRight)
-			.Select(_ => _.Position)
-			.Subscribe(_ =>
-			 {
-			    var point = _.MapToColor(mapper);
-					Console.WriteLine(String.Format("x: {0} y: {1}", point.X, point.Y));
-			 });
+<p>
+KinectSensor kinect = ... <br />
+var mapper = new CoordinateMapper(kinect); <br \>
+kinect.GetSkeletonFrameReadyObservable() <br />
+.Select(JointType.HandRight) <br />
+.Select(_ => _.Position) <br />
+.Subscribe(_ => <br />
+{ <br />
+	var point = _.MapToColor(mapper); <br />
+	Console.WriteLine(String.Format("x: {0} y: {1}", point.X, point.Y)); <br />
+}); <br />
+</p>
