@@ -5,11 +5,20 @@
     <version>$version$</version>
     <title>$title$</title>
     <authors>$author$</authors>
+    <projectUrl>https://github.com/MarcusKohnert/Kinect.Reactive</projectUrl>
     <owners>$author$</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
     <releaseNotes>Initail release.</releaseNotes>
     <copyright>Copyright 2013</copyright>
     <tags>Kinect Kinect4Windows</tags>
+    <dependencies> 
+      <group>
+         <dependency id="Rx-Main" />
+      </group>
+      <group>
+         <dependency id="Ix-Main" />
+      </group>
+    </dependencies>
   </metadata>
 </package>
